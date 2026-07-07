@@ -27,6 +27,32 @@ Open My Heart ❤️
 </div>
 
 <script src="script.js"></script>
+<section id="countdown" style="text-align:center; padding:40px 20px; color:white;">
+    <h2>⏳ Countdown to Your Birthday</h2>
+    <div id="timer" style="font-size:30px; margin-top:20px; color:gold; font-weight:bold;">
+        Loading...
+    </div>
+</section>
 
+<script>
+const birthday = new Date("October 11, 2026 00:00:00").getTime();
+
+setInterval(function () {
+    const now = new Date().getTime();
+    const distance = birthday - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("timer").innerHTML =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+
+    if (distance < 0) {
+        document.getElementById("timer").innerHTML = "🎉 Happy Birthday Rasmalai! ❤️";
+    }
+}, 1000);
+</script>
 </body>
 </html>
