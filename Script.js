@@ -1,3 +1,10 @@
-document.getElementById("startBtn").addEventListener("click", function () {
-    alert("❤️ Welcome My Rasmalai ❤️\n\nAaj tumhare liye ek chhoti si duniya banayi hai... ✨");
+const startBtn = document.getElementById("startBtn");
+const welcomeMessage = document.getElementById("welcomeMessage");
+
+startBtn.addEventListener("click", () => {
+
+    startBtn.style.display = "none";
+
+    welcomeMessage.style.display = "block";
+
 });
