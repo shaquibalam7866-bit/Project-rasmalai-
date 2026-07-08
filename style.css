@@ -40,3 +40,17 @@ h1{
 
 h2{
     font-size:22px; 
+.photo{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+    margin:12px;
+    border:3px solid gold;
+    box-shadow:0 0 20px rgba(255,215,0,.5);
+    transition:.4s;
+}
+
+.photo:hover{
+    transform:scale(1.08);
+}
