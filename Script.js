@@ -1,6 +1,7 @@
 const startBtn = document.getElementById("startBtn");
+const welcomeMessage = document.getElementById("welcomeMessage");
 
 startBtn.addEventListener("click", function () {
-    startBtn.innerHTML = "❤️ I Love You ❤️";
-    alert("Welcome to Project Rasmalai 🌸");
+    startBtn.style.display = "none";
+    welcomeMessage.style.display = "block";
 });
