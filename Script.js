@@ -23,3 +23,21 @@ const bgMusic = document.getElementById("bgMusic");
 startBtn.addEventListener("click", () => {
     bgMusic.play();
 });
+const letter = document.getElementById("letter");
+
+const text = letter.innerHTML;
+letter.innerHTML = "";
+
+let i = 0;
+
+function typeLetter() {
+  if (i < text.length) {
+    letter.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeLetter, 30);
+  }
+}
+
+startBtn.addEventListener("click", () => {
+  setTimeout(typeLetter, 1000);
+});
