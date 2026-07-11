@@ -17,3 +17,9 @@ giftBox.addEventListener("click", function () {
     giftBox.innerHTML = "🎉";
     giftText.innerHTML = "<h2>Happy Birthday My Rasmalai ❤️</h2>";
 });
+const startBtn = document.getElementById("startBtn");
+const bgMusic = document.getElementById("bgMusic");
+
+startBtn.addEventListener("click", () => {
+    bgMusic.play();
+});
