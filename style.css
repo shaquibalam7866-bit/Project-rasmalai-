@@ -106,3 +106,31 @@ h1{
 .gallery-grid img:hover{
     transform:scale(1.05);
 }
+/* Letter Section */
+
+.letter{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.letter h2{
+    font-size:2rem;
+    color:#ff4f8b;
+    margin-bottom:25px;
+}
+
+.letter-box{
+    max-width:700px;
+    margin:auto;
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.letter-box p{
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#444;
+}
