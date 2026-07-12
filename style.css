@@ -134,3 +134,24 @@ h1{
     line-height:1.8;
     color:#444;
 }
+/* Music Button */
+
+#musicBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#ff4f8b;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    z-index:1000;
+    transition:0.3s;
+}
+
+#musicBtn:hover{
+    transform:scale(1.05);
+}
