@@ -40,30 +40,7 @@ function typeLetter() {
 startBtn.addEventListener("click", () => {
   setTimeout(typeLetter, 1000);
 });
-@keyframes floatHearts {
-  0%{
-    transform:translateY(0);
-    opacity:1;
-  }
 
-  100%{
-    transform:translateY(-100vh);
-    opacity:0;
-  }
-}
-
-.hearts span{
-  position:fixed;
-  bottom:-50px;
-  font-size:25px;
-  animation:floatHearts 10s linear infinite;
-}
-
-.hearts span:nth-child(1){left:10%;}
-.hearts span:nth-child(2){left:30%; animation-delay:2s;}
-.hearts span:nth-child(3){left:50%; animation-delay:4s;}
-.hearts span:nth-child(4){left:70%; animation-delay:6s;}
-.hearts span:nth-child(5){left:90%; animation-delay:8s;}
 const music = document.getElementById("bgMusic");
 const musicBtn = document.getElementById("musicBtn");
 
