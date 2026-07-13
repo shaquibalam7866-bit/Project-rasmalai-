@@ -4,148 +4,119 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Rasmalai ❤️</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- Floating Hearts -->
 <div class="hearts">
   <span>❤️</span>
   <span>💖</span>
   <span>💕</span>
   <span>💗</span>
-  <span>❤️</span>
+  <span>🤍</span>
 </div>
 
+<!-- Hero Section -->
 <div class="container">
 
   <h1>💖 Project Rasmalai 💖</h1>
 
   <h2>For My Sweet Rasmalai 🌸</h2>
 
-  <p>
+  <p class="subtitle">
     A beautiful surprise is waiting for you...
   </p>
 
   <button id="startBtn">
     Open My Heart ❤️
   </button>
-  <div id="welcomeMessage" style="display:none; margin-top:20px;">
-  <h2>✨ Welcome, My Rasmalai ✨</h2>
-    <div id="giftBox" style="display:none; font-size:80px; margin-top:25px; cursor:pointer;">
-    🎁
-</div>
 
-<div id="giftText" style="display:none; margin-top:15px;">
-    <h2>Tap the Gift 🎁</h2>
-</div>
-  <p>
-    Every moment with you is precious to me. ❤️
-  </p>
+  <div id="welcomeMessage" style="display:none; margin-top:20px;">
+
+    <h2>✨ Welcome My Rasmalai ✨</h2>
+
+    <div id="giftBox" style="display:none; font-size:90px; cursor:pointer; margin-top:20px;">
+      🎁
+    </div>
+
+    <div id="giftText" style="display:none;">
+      <h2>Tap the Gift 🎁</h2>
+    </div>
+
   </div>
 
 </div>
 
+<!-- Countdown -->
 <section id="countdown">
-  <h2>⏳ Countdown to Your Birthday</h2>
-  <div id="giftBox" style="display:none; margin-top:30px; font-size:90px; cursor:pointer;">
-🎁
-</div>
 
-<div id="giftText" style=
-"display:none; margin-top:15px;">
-  <h2>🎂 Coming Soon...</h2>
-</div>
+  <h2>⏳ Countdown To Your Birthday</h2>
+
+  <h1 id="timer"></h1>
 
 </section>
-  <section class="gallery">
 
-<h2>📸 Our Beautiful Memories ❤️</h2>
+<!-- Gallery -->
+<section class="gallery">
 
-<div class="gallery-grid">
+  <h2>📸 Our Beautiful Memories ❤️</h2>
 
-<img src="images/photo1.jpg" alt="Photo 1">
+  <div class="gallery-container">
 
-<img src="images/photo2.jpg" alt="Photo 2">
+    <img src="images/photo1.jpg">
+    <img src="images/photo2.jpg">
+    <img src="images/photo3.jpg">
+    <img src="images/photo4.jpg">
 
-<img src="images/photo3.jpg" alt="Photo 3">
+  </div>
 
-<img src="images/photo4.jpg" alt="Photo 4">
+</section>
 
-</div>
-
-  </section>
-
-<script src="script.js"></script>
-  <audio id="bgMusic" loop>
-  <source src="music/birthday.mp3" type="audio/mpeg">
-  </audio>
-  <section class="letter">
+<!-- Letter -->
 <section class="letter">
 
 <h2>💌 A Letter Just For You</h2>
 
-<p id="letter">
-My Dear Rasmalai ❤️,
+<div class="letter-box">
 
-From the day you came into my life, everything became a little brighter. Your smile has the power to make even the hardest days feel beautiful.
+<p>
 
-This website is not just a birthday gift. It is a small piece of my heart, made with love, care, and countless prayers for your happiness.
+Dear Rasmalai ❤️
 
-On your special day, I pray that Allah blesses you with endless happiness, good health, success, and a life full of beautiful moments. May every dream of yours come true.
+This website is a small piece of my heart.
 
-Thank you for being such a wonderful person. No matter where life takes us, the memories we've made will always have a special place in my heart.
+Every smile of yours is precious to me.
 
-Happy Birthday, My Sweet Rasmalai. 🎂💖
+May Allah always keep you happy, safe and successful.
 
-With lots of love and duas,
+Happy Birthday. 🎂
 
 — Shaquib ❤️
+
 </p>
 
+</div>
+
 </section>
-<h2>💌 A Letter Just For You</h2>
 
-<p id="letter">
-Dear Rasmalai,
+<!-- Music -->
 
-Thank you for being such an amazing person in my life. Every smile, every memory, and every moment with you is a treasure.
-
-This website is a small gift made with lots of love, just to remind you how special you are.
-
-❤️ Happy Birthday ❤️
-
-— From Someone Who Cares
-</p>
-
-  </section>
-<!-- Photo Gallery -->
-<section class="gallery">
-  <section class="letter">
-    <h2>A Letter For You 💌</h2>
-
-    <div class="letter-box">
-        <p id="letterText">
-            Dear Rasmalai ❤️,
-            <br><br>
-            This is just the beginning...
-            Our real letter will be written together.
-        </p>
-    </div>
-  </section>
-    <h2>Our Beautiful Memories ❤️</h2>
-
-    <div class="gallery-container">
-        <img src="images/photo1.jpg" alt="Memory 1">
-        <img src="images/photo2.jpg" alt="Memory 2">
-        <img src="images/photo3.jpg" alt="Memory 3">
-        <img src="images/photo4.jpg" alt="Memory 4">
-    </div>
-</section>
 <audio id="bgMusic" loop>
-    <source src="music/song.mp3" type="audio/mpeg">
+
+<source src="music/song.mp3" type="audio/mpeg">
+
 </audio>
 
-<button id="musicBtn">🎵 Play Music</button>  
+<button id="musicBtn">
+
+🎵 Play Music
+
+</button>
+
+<script src="script.js"></script>
+
 </body>
-</html>  
+</html>
